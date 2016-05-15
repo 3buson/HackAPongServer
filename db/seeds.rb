@@ -12,8 +12,8 @@ lenic = User.new(
 )
 lenicStat = Stat.new(
     :calories     =>  1000,
-    :reflections  =>  5000,
-    :wins         => 1000
+    :reflections  =>  141,
+    :wins         => 76
 
 )
 lenic.stat = lenicStat
@@ -25,8 +25,8 @@ sone = User.new(
 )
 soneStat = Stat.new(
     :calories     =>  100,
-    :reflections  =>  500,
-    :wins         => 100
+    :reflections  =>  124,
+    :wins         => 69
 
 )
 sone.stat = soneStat
