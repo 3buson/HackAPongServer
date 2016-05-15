@@ -57,3 +57,29 @@ lesarStat = Stat.new(
 )
 lesar.stat = lesarStat
 lesar.save!
+
+matej = User.new(
+    :username                 => "Matej",
+    :password              => "testtest"
+)
+matejStat = Stat.new(
+    :calories     =>  15,
+    :reflections  =>  35,
+    :wins         => 3
+
+)
+matej.stat = matejStat
+matej.save!
+
+zoran = User.new(
+    :username                 => "Zoran",
+    :password              => "testtest"
+)
+zoranStat = Stat.new(
+    :calories     =>  54,
+    :reflections  =>  123,
+    :wins         => 6
+
+)
+zoran.stat = zoranStat
+zoran.save!

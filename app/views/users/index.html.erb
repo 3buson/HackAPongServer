@@ -1,25 +1,14 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Listing Users</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New User', new_user_path %>
+<div id="pricing-table" class="clear">
+  <%= @users_sorted.each_with_index do |user,k| %>
+  <div class="plan" <%= "id=most-popular" if k == 0 %> >
+    <h3><span><%= k + 1 %></span></h3>
+    <a class="signup" href=""><%= user.username %></a>
+    <ul>
+      <li><b><%= user.stat.wins %></b> Wins</li>
+      <li><b><%= user.stat.reflections %></b> Reflections</li>
+      <li><b><%= user.stat.calories %></b> Calories</li>
+      <li></li>
+    </ul>
+  </div>
+  <% end %>
+</div>

@@ -6,7 +6,9 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
-
+    @users_sorted = @users.sort_by do |item|
+      -item.stat.wins
+    end
   end
 
   # GET /users/1

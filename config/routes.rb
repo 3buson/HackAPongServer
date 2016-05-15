@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :stats
   resources :users
 
-  root 'stats#index'
+  root 'users#index'
 
   post '/login'   => 'users#login'
   post '/scores'  => 'stats#saveScores'
