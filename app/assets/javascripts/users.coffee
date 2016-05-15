@@ -3,10 +3,10 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(document).on 'ready page:load', ->
-  ###setTimeout (->
+  setTimeout (->
     Turbolinks.enableTransitionCache true
     Turbolinks.visit location.toString()
     Turbolinks.enableTransitionCache false
     return
-  ), 1000###
+  ), 1000
   return
