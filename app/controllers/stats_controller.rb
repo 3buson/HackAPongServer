@@ -84,7 +84,7 @@ class StatsController < ApplicationController
     @user1.stat = @user1Stat
     @user2.stat = @user2Stat
 
-    @user1.save
+      @user1.save
     @user2.save
   end
 
