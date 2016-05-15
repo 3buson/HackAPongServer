@@ -2,10 +2,13 @@ Rails.application.routes.draw do
   resources :stats
   resources :users
 
+  root 'stats#index'
+
   post '/login'   => 'users#login'
-  post '/scores'  => 'stat#saveScores'
+  post '/scores'  => 'stats#saveScores'
 
   get   '/test'  => 'users#testUsers'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

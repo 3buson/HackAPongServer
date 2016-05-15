@@ -1,4 +1,5 @@
 class StatsController < ApplicationController
+  skip_before_filter  :verify_authenticity_token
   before_action :set_stat, only: [:show, :edit, :update, :destroy]
 
   # GET /stats
@@ -84,8 +85,9 @@ class StatsController < ApplicationController
     @user1.stat = @user1Stat
     @user2.stat = @user2Stat
 
-      @user1.save
+    @user1.save
     @user2.save
+    redirect_to root_path
   end
 
   private
