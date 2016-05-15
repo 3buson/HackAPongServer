@@ -83,3 +83,42 @@ zoranStat = Stat.new(
 )
 zoran.stat = zoranStat
 zoran.save!
+
+primoz = User.new(
+    :username                 => "Primoz",
+    :password              => "testtest"
+)
+primozStat = Stat.new(
+    :calories     =>  60,
+    :reflections  =>  10,
+    :wins         => 9
+
+)
+primoz.stat = primozStat
+primoz.save!
+
+spela = User.new(
+    :username                 => "Spela",
+    :password              => "testtest"
+)
+spelaStat = Stat.new(
+    :calories     =>  605,
+    :reflections  =>  10123,
+    :wins         => 1
+
+)
+spela.stat = spelaStat
+spela.save!
+
+ana = User.new(
+    :username                 => "Ana",
+    :password              => "testtest"
+)
+anaStat = Stat.new(
+    :calories     =>  107,
+    :reflections  =>  107,
+    :wins         => 1
+
+)
+ana.stat = anaStat
+ana.save!
