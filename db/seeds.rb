@@ -77,7 +77,7 @@ zoran = User.new(
 )
 zoranStat = Stat.new(
     :calories     =>  54,
-    :reflections  =>  123,
+    :reflections  =>  63,
     :wins         => 6
 
 )
@@ -90,7 +90,7 @@ primoz = User.new(
 )
 primozStat = Stat.new(
     :calories     =>  60,
-    :reflections  =>  10,
+    :reflections  =>  107,
     :wins         => 9
 
 )
@@ -103,8 +103,8 @@ spela = User.new(
 )
 spelaStat = Stat.new(
     :calories     =>  605,
-    :reflections  =>  10123,
-    :wins         => 1
+    :reflections  =>  2,
+    :wins         => 0
 
 )
 spela.stat = spelaStat
@@ -116,8 +116,8 @@ ana = User.new(
 )
 anaStat = Stat.new(
     :calories     =>  107,
-    :reflections  =>  107,
-    :wins         => 1
+    :reflections  =>  10,
+    :wins         => 2
 
 )
 ana.stat = anaStat
