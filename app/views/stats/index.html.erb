@@ -12,7 +12,7 @@
   <tbody>
     <% @stats.each do |stat| %>
       <tr>
-        <td><%= stat.calories %></td>
+        <td><%= stat.wins %></td>
         <td><%= link_to 'Show', stat %></td>
         <td><%= link_to 'Edit', edit_stat_path(stat) %></td>
         <td><%= link_to 'Destroy', stat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
