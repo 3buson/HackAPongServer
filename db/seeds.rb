@@ -122,3 +122,29 @@ anaStat = Stat.new(
 )
 ana.stat = anaStat
 ana.save!
+
+luka = User.new(
+    :username                 => "Luka",
+    :password              => "testtest"
+)
+lukaStat = Stat.new(
+    :calories     =>  19,
+    :reflections  =>  14,
+    :wins         => 1
+
+)
+luka.stat = lukaStat
+luka.save!
+
+Miha = User.new(
+    :username                 => "Miha",
+    :password              => "testtest"
+)
+mihaStat = Stat.new(
+    :calories     =>  19,
+    :reflections  =>  54,
+    :wins         => 2
+
+)
+miha.stat = mihaStat
+miha.save!
